@@ -11,8 +11,9 @@ Pairwise data: plot(x,y), scatter(x,y), bar(x,height)
 More can be seen [here](https://matplotlib.org/stable/plot_types/index.html#plot-types)
 
 ## Components
-
-![](./assets/overview.png)
+<div align="center">
+<img width="400" height="400" src="./assets/overview.png" />
+</div>
 
 Basically, there are two components you need to customize : first is the figure (Figure, Axes) which you might want to have multiple subplots in one figure. Another is everything inside an axes, you can customize each subplot(axes) one by one.
 - Figure (plt.figure)

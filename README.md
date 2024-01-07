@@ -35,6 +35,7 @@ Basically, there are two components you need to customize : first is the figure 
 - Line  (ax.plot) 线
 - Markers (ax.scatter) 点的标志
 - Spine (ax.spines) 图四周的框
+- Artist (text, annoation)
 
 You just need to go through above components one by one to check what you need to customize.
 
@@ -44,3 +45,19 @@ There are many kind of methods to customize the styles (e.g. color, linestyle, l
 In this folder, all the styling properties of the component are listed as a refenrece, and you can directly call it in your main code by insert {key:value}.
 
 
+## Examples
+
+### Colors
+This includes my usual colors for reference
+
+### Roboto
+This is my usual font, you can use it by specifying
+
+```python
+import matplotlib.font_manager as font_manager
+
+font_dir = ['./Roboto']
+for font in font_manager.findSystemFonts(font_dir):
+    font_manager.fontManager.addfont(font)
+
+```

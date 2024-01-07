@@ -1,0 +1,63 @@
+## ***************************************************************************
+## * SAVING FIGURES                                                          *
+## ***************************************************************************
+## The default savefig parameters can be different from the display parameters
+## e.g., you may want a higher resolution, or to make the figure
+## background white
+#savefig.dpi:       figure      # figure dots per inch or 'figure'
+#savefig.facecolor: auto        # figure face color when saving
+#savefig.edgecolor: auto        # figure edge color when saving
+#savefig.format:    png         # {png, ps, pdf, svg}
+#savefig.bbox:      standard    # {tight, standard}
+                                # 'tight' is incompatible with generating frames
+                                # for animation
+#savefig.pad_inches:  0.1       # padding to be used, when bbox is set to 'tight'
+#savefig.directory:   ~         # default directory in savefig dialog, gets updated after
+                                # interactive saves, unless set to the empty string (i.e.
+                                # the current directory); use '.' to start at the current
+                                # directory but update after interactive saves
+#savefig.transparent: False     # whether figures are saved with a transparent
+                                # background by default
+#savefig.orientation: portrait  # orientation of saved figure, for PostScript output only
+
+### macosx backend params
+#macosx.window_mode : system   # How to open new figures (system, tab, window)
+                               # system uses the MacOS system preferences
+
+### tk backend params
+#tk.window_focus:   False  # Maintain shell focus for TkAgg
+
+### ps backend params
+#ps.papersize:      letter  # {figure, letter, legal, ledger, A0-A10, B0-B10}
+#ps.useafm:         False   # use AFM fonts, results in small files
+#ps.usedistiller:   False   # {ghostscript, xpdf, None}
+                            # Experimental: may produce smaller files.
+                            # xpdf intended for production of publication quality files,
+                            # but requires ghostscript, xpdf and ps2eps
+#ps.distiller.res:  6000    # dpi
+#ps.fonttype:       3       # Output Type 3 (Type3) or Type 42 (TrueType)
+
+### PDF backend params
+#pdf.compression:    6  # integer from 0 to 9
+                        # 0 disables compression (good for debugging)
+#pdf.fonttype:       3  # Output Type 3 (Type3) or Type 42 (TrueType)
+#pdf.use14corefonts: False
+#pdf.inheritcolor:   False
+
+### SVG backend params
+#svg.image_inline: True  # Write raster image data directly into the SVG file
+#svg.fonttype: path      # How to handle SVG fonts:
+                         #     path: Embed characters as paths -- supported
+                         #           by most SVG renderers
+                         #     None: Assume fonts are installed on the
+                         #           machine where the SVG will be viewed.
+#svg.hashsalt: None      # If not None, use this string as hash salt instead of uuid4
+
+### pgf parameter
+## See https://matplotlib.org/stable/tutorials/text/pgf.html for more information.
+#pgf.rcfonts: True
+#pgf.preamble:  # See text.latex.preamble for documentation
+#pgf.texsystem: xelatex
+
+### docstring params
+#docstring.hardcopy: False  # set this when you want to generate hardcopy docstring

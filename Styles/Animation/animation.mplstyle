@@ -1,0 +1,27 @@
+## ***************************************************************************
+## * ANIMATION                                                               *
+## ***************************************************************************
+#animation.html: none  # How to display the animation as HTML in
+                       # the IPython notebook:
+                       #     - 'html5' uses HTML5 video tag
+                       #     - 'jshtml' creates a JavaScript animation
+#animation.writer:  ffmpeg        # MovieWriter 'backend' to use
+#animation.codec:   h264          # Codec to use for writing movie
+#animation.bitrate: -1            # Controls size/quality trade-off for movie.
+                                  # -1 implies let utility auto-determine
+#animation.frame_format: png      # Controls frame format used by temp files
+
+## Path to ffmpeg binary.  Unqualified paths are resolved by subprocess.Popen.
+#animation.ffmpeg_path:  ffmpeg
+## Additional arguments to pass to ffmpeg.
+#animation.ffmpeg_args:
+
+## Path to ImageMagick's convert binary.  Unqualified paths are resolved by
+## subprocess.Popen, except that on Windows, we look up an install of
+## ImageMagick in the registry (as convert is also the name of a system tool).
+#animation.convert_path: convert
+## Additional arguments to pass to convert.
+#animation.convert_args: -layers, OptimizePlus
+#
+#animation.embed_limit:  20.0     # Limit, in MB, of size of base64 encoded
+                                  # animation in HTML (i.e. IPython notebook)

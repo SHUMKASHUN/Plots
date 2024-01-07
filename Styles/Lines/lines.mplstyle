@@ -1,0 +1,26 @@
+# ***************************************************************************
+# * LINES                                                                   *
+# ***************************************************************************
+# See https://matplotlib.org/stable/api/artist_api.html#module-matplotlib.lines
+# for more information on line properties.
+lines.linewidth: 1.5               # line width in points
+lines.linestyle: -                 # solid line , more : {"solid", "dotted", "dashed" or "dashdot"}
+lines.color:     C0                # has no affect on plot(); see axes.prop_cycle
+lines.marker:          None        # the default marker more : https://matplotlib.org/stable/api/markers_api.html
+lines.markerfacecolor: auto        # the default marker face color
+lines.markeredgecolor: auto        # the default marker edge color
+lines.markeredgewidth: 1.0         # the line width around the marker symbol
+lines.markersize:      26           # marker size, in points
+lines.dash_joinstyle:  round       # {miter, round, bevel}
+lines.dash_capstyle:   butt        # {butt, round, projecting}
+lines.solid_joinstyle: round       # {miter, round, bevel}
+lines.solid_capstyle:  projecting  # {butt, round, projecting}
+lines.antialiased: True            # render lines in antialiased (no jaggies)
+
+# The three standard dash patterns.  These are scaled by the linewidth.
+lines.dashed_pattern: 3.7, 1.6
+lines.dashdot_pattern: 6.4, 1.6, 1, 1.6
+lines.dotted_pattern: 1, 1.65
+lines.scale_dashes: True
+
+markers.fillstyle: full  # {full, left, right, bottom, top, none}

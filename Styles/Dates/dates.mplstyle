@@ -1,0 +1,26 @@
+## ***************************************************************************
+## * DATES                                                                   *
+## ***************************************************************************
+## These control the default format strings used in AutoDateFormatter.
+## Any valid format datetime format string can be used (see the python
+## `datetime` for details).  For example, by using:
+##     - '%x' will use the locale date representation
+##     - '%X' will use the locale time representation
+##     - '%c' will use the full locale datetime representation
+## These values map to the scales:
+##     {'year': 365, 'month': 30, 'day': 1, 'hour': 1/24, 'minute': 1 / (24 * 60)}
+
+#date.autoformatter.year:        %Y
+#date.autoformatter.month:       %Y-%m
+#date.autoformatter.day:         %Y-%m-%d
+#date.autoformatter.hour:        %m-%d %H
+#date.autoformatter.minute:      %d %H:%M
+#date.autoformatter.second:      %H:%M:%S
+#date.autoformatter.microsecond: %M:%S.%f
+## The reference date for Matplotlib's internal date representation
+## See https://matplotlib.org/stable/gallery/ticks/date_precision_and_epochs.html
+#date.epoch: 1970-01-01T00:00:00
+## 'auto', 'concise':
+#date.converter:                  auto
+## For auto converter whether to use interval_multiples:
+#date.interval_multiples:         True

@@ -1,0 +1,7 @@
+## ***************************************************************************
+## * GRIDS                                                                   *
+## ***************************************************************************
+grid.color:     "#b0b0b0"  # grid color
+grid.linestyle: -          # solid
+grid.linewidth: 0.8        # in points
+grid.alpha:     1.0        # transparency, between 0.0 and 1.0

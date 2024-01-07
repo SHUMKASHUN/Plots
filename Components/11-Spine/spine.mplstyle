@@ -1,0 +1,5 @@
+# https://matplotlib.org/stable/api/spines_api.html
+axes.spines.left:   True  # display axis spines
+axes.spines.bottom: True
+axes.spines.top:    True
+axes.spines.right:  True

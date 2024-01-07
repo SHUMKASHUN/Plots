@@ -1,0 +1,5 @@
+# ***************************************************************************
+# * AXIS                                                                    *
+# ***************************************************************************
+xaxis.labellocation: center  # alignment of the xaxis label: {left, right, center}
+yaxis.labellocation: center  # alignment of the yaxis label: {bottom, top, center}

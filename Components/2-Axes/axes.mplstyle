@@ -1,0 +1,75 @@
+# ***************************************************************************
+# * AXES                                                                    *
+# ***************************************************************************
+# Following are default face and edge colors, default tick sizes,
+# default font sizes for tick labels, and so on.  See
+# https://matplotlib.org/stable/api/axes_api.html#module-matplotlib.axes
+axes.facecolor:     white   # axes background color
+axes.edgecolor:     black   # axes edge color
+axes.linewidth:     0.8     # edge line width
+axes.grid:          False   # display grid or not
+axes.grid.axis:     both    # which axis the grid should apply to
+axes.grid.which:    major   # grid lines at {major, minor, both} ticks
+axes.titlelocation: center  # alignment of the title: {left, right, center}
+axes.titlesize:     large   # font size of the axes title
+axes.titleweight:   normal  # font weight of title
+axes.titlecolor:    auto    # color of the axes title, auto falls back to
+                            # text.color as default value
+axes.titley:        None    # position title (axes relative units).  None implies auto
+axes.titlepad:      6.0     # pad between axes and title in points
+axes.labelsize:     medium  # font size of the x and y labels
+axes.labelpad:      4.0     # space between label and axis
+axes.labelweight:   normal  # weight of the x and y labels
+axes.labelcolor:    black
+axes.axisbelow:     line    # draw axis gridlines and ticks:
+                            #     - below patches (True)
+                            #     - above patches but below lines ('line')
+                            #     - above all (False)
+
+axes.formatter.limits: -5, 6  # use scientific notation if log10
+                              # of the axis range is smaller than the
+                              # first or larger than the second
+axes.formatter.use_locale: False  # When True, format tick labels
+                                  # according to the user's locale.
+                                  # For example, use ',' as a decimal
+                                  # separator in the fr_FR locale.
+axes.formatter.use_mathtext: False  # When True, use mathtext for scientific
+                                    # notation.
+axes.formatter.min_exponent: 0  # minimum exponent to format in scientific notation
+axes.formatter.useoffset: True  # If True, the tick label formatter
+                                # will default to labeling ticks relative
+                                # to an offset when the data range is
+                                # small compared to the minimum absolute
+                                # value of the data.
+axes.formatter.offset_threshold: 4  # When useoffset is True, the offset
+                                    # will be used when it can remove
+                                    # at least this number of significant
+                                    # digits from tick labels.
+
+axes.spines.left:   True  # display axis spines
+axes.spines.bottom: True
+axes.spines.top:    True
+axes.spines.right:  True
+
+axes.unicode_minus: True  # use Unicode for the minus symbol rather than hyphen.  See
+                          # https://en.wikipedia.org/wiki/Plus_and_minus_signs#Character_codes
+axes.prop_cycle: cycler('color', ['1f77b4', 'ff7f0e', '2ca02c', 'd62728', '9467bd', '8c564b', 'e377c2', '7f7f7f', 'bcbd22', '17becf'])
+                  # color cycle for plot lines as list of string color specs:
+                  # single letter, long name, or web-style hex
+                  # As opposed to all other parameters in this file, the color
+                  # values must be enclosed in quotes for this parameter,
+                  # e.g. '1f77b4', instead of 1f77b4.
+                  # See also https://matplotlib.org/stable/users/explain/artists/color_cycle.html
+                  # for more details on prop_cycle usage.
+axes.xmargin:   .05  # x margin.  See `axes.Axes.margins`
+axes.ymargin:   .05  # y margin.  See `axes.Axes.margins`
+axes.zmargin:   .05  # z margin.  See `axes.Axes.margins`
+axes.autolimit_mode: data  # If "data", use axes.xmargin and axes.ymargin as is.
+                           # If "round_numbers", after application of margins, axis
+                           # limits are further expanded to the nearest "round" number.
+polaraxes.grid:    True   # display grid on polar axes
+axes3d.grid:       True   # display grid on 3D axes
+
+axes3d.xaxis.panecolor:    (0.95, 0.95, 0.95, 0.5)  # background pane on 3D axes
+axes3d.yaxis.panecolor:    (0.90, 0.90, 0.90, 0.5)  # background pane on 3D axes
+axes3d.zaxis.panecolor:    (0.925, 0.925, 0.925, 0.5)  # background pane on 3D axes
